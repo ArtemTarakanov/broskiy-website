@@ -1,0 +1,73 @@
+.add-services{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.add-services-heading{
+    font-size: clamp(3rem, 4vw, 6rem);
+    margin-bottom: 5rem;
+    color: #00d4ff;
+    text-align: center;
+}
+
+.add-services-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem
+}
+
+.add-services-card{
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow-blur: 10px;
+    border: 1px rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: max-height 0.5s ease;
+}
+
+.add-services-icon{
+    font-size: clamp(3rem, 4vw, 6rem);
+    margin-bottom: 1rem;
+}
+
+.add-services-title{
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #00d4ff;
+}
+
+.add-services-price{
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    color: #ff6b6b;
+}
+
+.add-services-description{
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: #b0b0b0;
+    line-height: 1.5;
+}
+
+.add-services-card:hover{
+    transform: translateY(5px);
+    box-shadow: 0 15px 30px rgba(0, 212, 255, 0.15);
+}
+
+@media (max-width: 768px){
+    .add-services-grid{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .add-services-heading{
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 480px){
+    .add-services-grid{
+        grid-template-columns: 1fr;
+    }
+}
