@@ -6,6 +6,7 @@ import Services from "./components/Services.tsx";
 import Process from "./components/Process.tsx";
 import AddServices from "./components/AddServices.tsx";
 import Footer from "./components/Footer.tsx";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Process/>
         <AddServices/>
         <Footer/>
+        <Analytics />
     </>
   )
 }
